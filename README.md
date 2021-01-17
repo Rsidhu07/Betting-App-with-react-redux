@@ -1,6 +1,6 @@
 # Getting Started with App
  
- npm install
+ npm install .\
  npm start / yarn start
 
 

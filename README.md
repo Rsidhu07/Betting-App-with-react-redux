@@ -1,7 +1,7 @@
 # Getting Started with App
  
-# npm install
-# npm start / yarn start
+ npm install
+ npm start / yarn start
 
 
 ## Available Scripts

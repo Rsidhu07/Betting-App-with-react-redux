@@ -1,0 +1,35 @@
+.UsersList{
+    display: flex;
+    flex: 1;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#usersTable {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+}
+
+#usersTable td, #usersTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #usersTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #usersTable tr:hover {background-color: #ddd;}
+  
+  #usersTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* #usersTable input[type='checkbox']{
+    height: 5rem;
+} */

@@ -1,0 +1,106 @@
+.Sidebar{
+    display: flex;
+    background-color: rgb(146 146 146);
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+  
+}
+
+.h2-heading {
+    margin-top: 1rem;
+}
+
+.userContainer {
+    width:100%;
+    margin: 2rem 0 2rem 6.5rem;
+    position: relative;
+    
+}
+
+.image{
+    border-radius: 0.5rem;
+}
+
+.h3-name {
+    position: absolute;
+    left: 15%;
+    top: 2%;
+}
+.wins {
+    position: absolute;
+    left: 15.5%;
+    top: 61%;
+}
+.bet {
+    position: absolute;
+    top: 61%;
+    left: 32%;
+}
+.price{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+.h3-wins {
+    position: absolute;
+    top: -6.5%;
+    left: 121%;
+}
+
+.h3-bet {
+    position: absolute;
+    top: -11%;
+    left: 118%;
+    
+
+}
+.h3-price{
+    position: absolute;
+    top: -16%;
+    left: 134%;
+    font-weight: 600;
+
+}
+
+.h3-wins,.h3-bet{
+    font-weight: 300;
+}
+
+.start-button{
+    margin:1rem 0.6rem 4rem 0;
+    width: 80%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #69cac0;
+    border:none;
+    outline: none;
+    box-shadow: 0 9px rgb(193, 231, 238);
+    height: 3rem;
+}
+
+.start-button:hover {background-color: #84dfd6}
+
+.start-button:active {
+  background-color: #84dfd6;
+  box-shadow: 0 5px rgb(193, 231, 238);
+  transform: translateY(4px);
+}
+/* 
+
+.h3 {
+    margin-left:1rem;
+    font-size: 1rem;
+}
+
+.iconContainer{
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    width:100%;
+    margin-left: 1rem;
+} */

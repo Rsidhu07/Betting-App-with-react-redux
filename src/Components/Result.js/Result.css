@@ -1,0 +1,125 @@
+.Result{
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.card {
+    border: 1px solid red;
+    border-radius: 1rem;
+    width: 14rem;
+    height: 15rem;
+    background-color: rgb(245, 245, 245);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.h3-result-name{
+    position: absolute;
+    top: 12%;
+    left: 43%;
+}
+
+.h3-result-level{
+    position: absolute;
+    top: 21%;
+    left: 44%;
+    font-size: 0.8rem;
+
+}
+
+/* icons */
+
+.result-wins {
+    position: absolute;
+    top: 58%;
+    left: 11%;
+}
+.result-bet {
+    position: absolute;
+    top: 43%;
+    left: 66%;
+
+}
+.result-price {
+    position: absolute;
+    top: 43%;
+
+}
+
+/* icons end*/
+
+/* h3 in card*/
+
+.h3-result-wins {
+    position: absolute;
+    top: 0%;
+    font-size: 1rem;
+    left: 136%;
+
+}
+.h3-result-bet {
+    position: absolute;
+    top: 0%;
+    font-size: 1rem;
+    left: 136%;
+
+}
+.h3-result-price {
+    position: absolute;
+    top: 0%;
+    font-size: 1rem;
+    left: 136%;
+
+}
+
+.h3-result-wins,.h3-result-price,.h3-result-bet{
+    font-weight: lighter;
+}
+
+/* h3 in card end  */
+
+.h3-lose {
+    position: absolute;
+    left: 9.5%;
+    top: 84%;
+    height: 3rem;
+    width: 80%;
+    background-color: red;
+    border-radius: 1.2rem;
+    text-align: center;
+    padding: 0.8rem;
+    color: #fff;
+}
+
+.result-img{
+    border-radius: 0.5rem;
+}
+
+
+.back-button{
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #69cac0;
+    border:none;
+    outline: none;
+    box-shadow: 0 9px rgb(193, 231, 238);
+    width: 8rem;
+    height: 2rem;
+    position: absolute;
+    top: 93%;
+    left:5%;
+}
+
+.back-button:hover {background-color: #84dfd6}
+
+.back-button:active {
+  background-color: #84dfd6;
+  box-shadow: 0 5px rgb(193, 231, 238);
+  transform: translateY(4px);
+}

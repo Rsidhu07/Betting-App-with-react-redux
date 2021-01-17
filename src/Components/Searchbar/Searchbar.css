@@ -1,0 +1,19 @@
+.Searchbar{
+    display: flex;
+    flex: 1;
+    margin-bottom: 4rem;
+}
+
+.Searchbar input,button {
+    height: 5vh;
+    margin-left: 1rem;
+    margin-top: 2vh;
+}
+
+.Searchbar label {
+    margin-top: 3vh;
+}
+
+.Searchbar button{
+    margin-left:0;
+}

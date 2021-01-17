@@ -1,15 +1,44 @@
 .Result{
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    position: relative;
+}
+
+.text-result{
+    position: absolute;
+    color: #343734;
+    top: 4%;
+    left: 37%;
+}
+
+.resultNumber {
+    background-color: rgb(103, 143, 103);
+    width: 5rem;
+    position: absolute;
+    left:45%;
+    top:0.4%;
+    height:5rem;
+    text-align: center;
+    border-radius: 50%;
+    color: honeydew;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resultUsersContainer {
+    display: flex;
+    min-height: 70%;
     justify-content: space-evenly;
+    align-content: space-between;
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    
 }
 
 .card {
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 1rem;
     width: 14rem;
     height: 15rem;
@@ -17,6 +46,12 @@
     padding: 1.5rem;
     position: relative;
     overflow: hidden;
+}
+
+.card-win {
+    border: 2px solid rgb(58, 204, 58);
+    width: 15rem;
+    height: 17rem;
 }
 
 .h3-result-name{
@@ -97,6 +132,19 @@
     color: #fff;
 }
 
+.h3-win {
+    position: absolute;
+    left: 9.5%;
+    top: 84%;
+    height: 3rem;
+    width: 80%;
+    background-color: rgb(58, 204, 58);
+    border-radius: 1.2rem;
+    text-align: center;
+    padding: 0.8rem;
+    color: #fff;
+}
+
 .result-img{
     border-radius: 0.5rem;
 }
@@ -111,9 +159,8 @@
     box-shadow: 0 9px rgb(193, 231, 238);
     width: 8rem;
     height: 2rem;
-    position: absolute;
-    top: 93%;
-    left:5%;
+    margin-bottom: 2.5rem;
+   
 }
 
 .back-button:hover {background-color: #84dfd6}

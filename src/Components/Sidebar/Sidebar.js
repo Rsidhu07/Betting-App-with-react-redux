@@ -1,11 +1,12 @@
 import './Sidebar.css';
 import React from 'react';
 import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import {setRandomNumber, setWinningUsers} from '../../store/actions/action';
 
 
 const Sidebar = (props) => {
+    const navigate = useNavigate();
 
     const { checkedUsers, onSetRandonNumber, onSetWinningUsers } = props;
 
@@ -23,19 +24,14 @@ const Sidebar = (props) => {
     };
 
     const startButtonHandler =() => { 
-
         if (props.checkedUsers.length < 9){
             return alert('Select 9 Players');
         }
 
         const winningUsers = checkWinner(checkedUsers);
-
         onSetWinningUsers(winningUsers)
-
         console.log('winning user is ====.>>', winningUsers);
-
-
-        return props.history.push('/result');
+        navigate('/result');
     };
 
     return (
@@ -78,4 +74,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Sidebar));
+export default connect(mapStateToProps,mapDispatchToProps)(Sidebar);
